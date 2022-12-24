@@ -29,7 +29,7 @@ export default {
     async toDoLogin(email, password){
       const response = await Login.login(email, password);
       localStorage.setItem('token', response.data.token);
-      this.$store.state.dispatch('login', )
+      this.$store.commit('loginMut', response.data.token);
       
     }
   }

@@ -7,8 +7,14 @@ export default createStore({
   getters: {
   },
   mutations: {
+    loginMut(state, token){
+      state.use = token;
+    }
   },
   actions: {
+    login(token){
+      
+    }
   },
   modules: {
   }
